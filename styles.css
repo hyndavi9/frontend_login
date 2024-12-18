@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+ 
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.iconButton img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Styles for Search Bar */
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.searchBar input {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.searchBar button {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.searchBar button img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Styles for Toggle Menu */
+.toggleButton {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggleButton img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Styles for Sidebar Menu */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 280px;
+  height: 100%;
+  background-color: white;
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 998;
+}
+
+.sidebar .iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .iconButton .sidebarIcon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Adjust the text size in sidebar */
+.sidebar .iconButton span {
+  font-size: 20px;
+}
+
+/* Animation for Sidebar */
+.sidebar.active {
+  left: 0;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
